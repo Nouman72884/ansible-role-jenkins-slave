@@ -1,6 +1,6 @@
 Role Jenkins Slave
 =========
-[![Build Status](https://travis-ci.com/lawrenz23/ansible-role-jenkins-slave.svg?branch=master)](https://travis-ci.com/lawrenz23/ansible-role-jenkins-slave)
+[![Build Status](https://travis-ci.org/dinivas/ansible-role-jenkins-slave.svg?branch=master)](https://travis-ci.org/dinivas/ansible-role-jenkins-slave)
 
 This role create a jenkins slave via JNLP
 
@@ -41,3 +41,7 @@ Example Playbook
           jenkins_slave_user: jenkins
           jenkins_slave_group: jenkins
           jenkins_slave_name: docker-slave
+
+If you only want to install slave service (without registering to the master), you can use `--skip-tags "register"`
+
+
